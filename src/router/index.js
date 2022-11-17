@@ -65,8 +65,8 @@ export const constantRoutes = [
       {
         path: 'register',
         name: '注册数据源',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        component: () => import('@/views/dataSource/index'),
+        meta: { title: '注册数据源', icon: 'el-icon-documentAdd' }
       },
       {
         path: 'tree',

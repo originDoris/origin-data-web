@@ -83,7 +83,7 @@ export default {
         this.$message('数据源保存成功!')
         this.loading = false
         this.$router.push({
-          path: '/dataSource/tree'
+          path: '/dataSource/list'
         })
       })
     },

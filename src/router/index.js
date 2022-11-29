@@ -64,15 +64,15 @@ export const constantRoutes = [
     children: [
       {
         path: 'register',
-        name: '注册数据源',
-        component: () => import('@/views/dataSource/index'),
+        name: 'sourceRegister',
+        component: () => import('@/views/dataSource/add'),
         meta: { title: '注册数据源', icon: 'el-icon-document-add' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'list',
+        name: 'sourceList',
+        component: () => import('@/views/dataSource/list'),
+        meta: { title: '数据源列表', icon: 'list' }
       }
     ]
   },

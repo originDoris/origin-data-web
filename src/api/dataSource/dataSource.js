@@ -14,3 +14,22 @@ export function saveSource(data) {
     data
   })
 }
+export function queryList(data) {
+  return request({
+    url: '/source/queryList',
+    method: 'get',
+    params: {
+      sourceType: data.sourceType,
+      sourceName: data.sourceName
+    }
+  })
+}
+export function removeById(data) {
+  return request({
+    url: '/source/remove',
+    method: 'get',
+    params: {
+      id: data
+    }
+  })
+}
